@@ -65,6 +65,9 @@
   @media (min-width: 1200px) {
     max-width: 386px;
   }
+  @media (max-width: 1200px) {
+    margin-bottom: 24px;
+  }
   @media (max-width: 576px) {
     font-size: 14px;
   }
@@ -167,6 +170,7 @@
 .legal-representation__description-learn {
   font-size: 18px;
   line-height: 1.6;
+
   @media (max-width: 576px) {
     font-size: 14px;
   }
@@ -214,8 +218,22 @@
   background: #cb6942;
 }
 
+.legal-representation__absolute-read::after {
+  @media (max-width: 576px) {
+    width: 84px;
+  }
+}
+.legal-representation__absolute-second::after {
+  @media (max-width: 576px) {
+    width: 88px;
+  }
+}
+
 .legal-representation__plus-sign {
   margin-right: 15px;
+  @media (max-width: 576px) {
+    margin-right: 8px;
+  }
 }
 
 .legal-representation__plus-sign,
@@ -223,10 +241,14 @@
 .legal-representation__anchor-learn {
   text-decoration: none;
   color: #cb6942;
+  font-size: 18px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
 }
 // show more text end
 
-.flex {
+.legal-representation__container-flex {
   display: flex;
   gap: 250px;
   @media (max-width: 1200px) {
@@ -235,12 +257,13 @@
     gap: 68px;
   }
 }
-.relative {
+.legal-representation__container-relative {
   position: relative;
 }
 
 //button area start
-.legal-representation__button {
+.legal-representation__button,
+.legal-representation__button-second {
   height: 72px;
   background-color: #cb6942;
   color: #ffffff;
@@ -251,6 +274,9 @@
   margin-top: 72px;
   margin-bottom: 165px;
   cursor: pointer;
+  @media (max-width: 1200px) {
+    margin-top: 0;
+  }
   @media (max-width: 768px) {
     padding: 0 62.5px 0 62.5px;
     font-size: 16px;
@@ -269,9 +295,14 @@
   }
 }
 
-.legal-representation__button:hover {
+.legal-representation__button:hover,
+.legal-representation__button-second:hover {
   background-color: #222629;
   color: #cb6942;
+}
+
+.legal-representation__button-second {
+  margin-top: 72px;
 }
 // button area end
 
