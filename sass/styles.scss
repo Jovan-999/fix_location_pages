@@ -197,8 +197,7 @@
 
 // show more text start
 
-.legal-representation__absolute-read,
-.legal-representation__absolute-second {
+.legal-representation__absolute-learn {
   color: #cb6942;
   position: absolute;
   right: 0;
@@ -206,8 +205,7 @@
   font-size: 18px;
 }
 
-.legal-representation__absolute-read::after,
-.legal-representation__absolute-second::after {
+.legal-representation__absolute-learn::after {
   content: '';
   position: absolute;
   left: 0;
@@ -217,12 +215,7 @@
   background: #cb6942;
 }
 
-.legal-representation__absolute-read::after {
-  @media (max-width: 576px) {
-    width: 84px;
-  }
-}
-.legal-representation__absolute-second::after {
+.legal-representation__absolute-learn::after {
   @media (max-width: 576px) {
     width: 88px;
   }
@@ -236,7 +229,6 @@
 }
 
 .legal-representation__plus-sign,
-.legal-representation__anchor-read,
 .legal-representation__anchor-learn {
   text-decoration: none;
   color: #cb6942;
