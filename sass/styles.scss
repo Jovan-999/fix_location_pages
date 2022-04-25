@@ -60,7 +60,7 @@
   }
 }
 
-.ml {
+.legal-representation__right-box {
   font-size: 18px;
   @media (min-width: 1200px) {
     max-width: 386px;
@@ -116,8 +116,8 @@
   }
 }
 
-@media (max-width: 992px) {
-  .legal-representation__title-second::after {
+.legal-representation__title-second::after {
+  @media (max-width: 992px) {
     content: '';
     position: absolute;
     left: -20px;
@@ -170,7 +170,6 @@
 .legal-representation__description-learn {
   font-size: 18px;
   line-height: 1.6;
-
   @media (max-width: 576px) {
     font-size: 14px;
   }
@@ -288,8 +287,8 @@
   }
 }
 
-@media (max-width: 768px) {
-  .legal-representation__button-container {
+.legal-representation__button-container {
+  @media (max-width: 768px) {
     display: flex;
     justify-content: center;
   }
