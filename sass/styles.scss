@@ -1,7 +1,56 @@
 // wrapper start
+// main wrapper start
 .location-pages__section-wrapper {
   font-family: 'Roboto';
 }
+// main wrapper end
+
+// process page wrapped containers start
+
+.process-page__secton-wrapper {
+  background-color: #414141;
+}
+
+.process-page__second-part {
+  margin-top: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.process-page__second-part::after {
+  content: '';
+  position: absolute;
+  left: 700px;
+  right: 0;
+  margin: 0 auto;
+  top: 2px;
+  width: 710px;
+  height: 4px;
+  background: #cb6942;
+  z-index: 1;
+}
+
+.process-page__second-part::before {
+  content: '';
+  position: absolute;
+  left: 700px;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 80px;
+  height: 8px;
+  background: #cb6942;
+  z-index: 2;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+// process page wrapped containers end
+
+// legal representation wrapped containers start
 
 .legal-representation__section-wrapper {
   background-color: #f3f3f3;
@@ -72,10 +121,58 @@
     font-size: 14px;
   }
 }
+// legal representation wrapped containers end
 
 // wrapper end
 
 // title area start
+
+// process page start
+
+.process-page__main-title {
+  padding-top: 160px;
+  font-size: 80px;
+  position: relative;
+  color: #ffffff;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+.process-page__main-title::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  bottom: -20px;
+  width: 144px;
+  height: 4px;
+  background: #cb6942;
+}
+
+.process-page__title-second {
+  padding-top: 80px;
+  font-size: 80px;
+  position: relative;
+  color: #ffffff;
+}
+
+.process-page__title-second::after {
+  content: '';
+  position: absolute;
+  left: -55px;
+  bottom: -23px;
+  width: 144px;
+  height: 4px;
+  background: #cb6942;
+}
+
+// process page end
+
+// legal representation start
+
 .legal-representation__main-title {
   font-size: 80px;
   font-weight: 400;
@@ -127,10 +224,26 @@
     background: #cb6942;
   }
 }
+// legal representation end
 
 // title area end
 
 // description area start
+
+.process-page__title-description {
+  font-size: 18px;
+  margin-top: 57px;
+  position: relative;
+  color: #ffffff;
+}
+
+.process-page__read-span {
+  display: none;
+}
+
+.process-page__read-paragraph.process-page__show-more .process-page__read-span {
+  display: inline;
+}
 
 .legal-representation__title-description {
   font-size: 18px;
@@ -197,7 +310,8 @@
 
 // show more text start
 
-.legal-representation__absolute-learn {
+.legal-representation__absolute-learn,
+.process-page__absolute-read {
   color: #cb6942;
   position: absolute;
   right: 0;
@@ -205,7 +319,8 @@
   font-size: 18px;
 }
 
-.legal-representation__absolute-learn::after {
+.legal-representation__absolute-learn::after,
+.process-page__absolute-read::after {
   content: '';
   position: absolute;
   left: 0;
@@ -215,13 +330,15 @@
   background: #cb6942;
 }
 
-.legal-representation__absolute-learn::after {
+.legal-representation__absolute-learn::after,
+.process-page__absolute-read::after {
   @media (max-width: 576px) {
     width: 88px;
   }
 }
 
-.legal-representation__plus-sign {
+.legal-representation__plus-sign,
+.process-page__plus-sign {
   margin-right: 15px;
   @media (max-width: 576px) {
     margin-right: 8px;
@@ -229,7 +346,9 @@
 }
 
 .legal-representation__plus-sign,
-.legal-representation__anchor-learn {
+.legal-representation__anchor-learn,
+.process-page__anchor-read,
+.process-page__plus-sign {
   text-decoration: none;
   color: #cb6942;
   font-size: 18px;
@@ -238,6 +357,8 @@
   }
 }
 // show more text end
+
+//
 
 .legal-representation__container-flex {
   display: flex;
@@ -252,7 +373,28 @@
   position: relative;
 }
 
+.process-page__img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 //button area start
+
+.process-page__button-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  background-color: #cb6942;
+  color: #ffffff;
+  padding: 22.3px 104.5px 22.7px 105.5px;
+  font-size: 20px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 70px;
+  cursor: pointer;
+}
 .legal-representation__button,
 .legal-representation__button-second {
   height: 72px;
@@ -308,3 +450,58 @@
 }
 
 // legal representation section description right end
+
+// process page cards start
+
+.process-page__cards-together {
+  margin-top: 90px;
+}
+
+.process-page__card {
+  text-align: center;
+}
+
+.process-page__numbers {
+  width: 94px;
+  height: 110px;
+  margin-bottom: 60px;
+}
+
+.process-page__box-text {
+  font-size: 32px;
+
+  color: #ffffff;
+}
+
+.process-page__icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.process-page__svg {
+  width: 83px;
+  height: 83px;
+}
+
+.flex-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.process-page__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 72px;
+  background-color: #cb6942;
+  color: #ffffff;
+  padding: 22.3px 104.5px 22.7px 105.5px;
+  font-size: 20px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 72px;
+  cursor: pointer;
+}
+
+// process page cards end
