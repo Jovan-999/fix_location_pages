@@ -84,7 +84,8 @@
         "../node_modules/bootstrap/scss/helpers/_stretched-link.scss",
         "../node_modules/bootstrap/scss/helpers/_text-truncation.scss",
         "../node_modules/bootstrap/scss/helpers/_vr.scss",
-        "../node_modules/bootstrap/scss/utilities/_api.scss"
+        "../node_modules/bootstrap/scss/utilities/_api.scss",
+        "../sass/_vars.scss"
     ],
     "names": [],
     "file": "main.min.css"
