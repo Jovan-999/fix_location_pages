@@ -73,8 +73,7 @@ img {
 .grid__container {
   @media (max-width: 1200px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -211,6 +210,7 @@ img {
   max-width: 735px;
   @media (max-width: 1200px) {
     font-size: 60px;
+    padding-top: 20px;
   }
   @media (max-width: 768px) {
     font-size: 32px;
@@ -294,10 +294,7 @@ img {
 .text__area {
   @media (max-width: 1200px) {
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
     grid-row-start: 2;
-    width: 200%;
   }
 }
 
@@ -382,8 +379,7 @@ img {
 // show more text start
 
 .legal-representation__absolute-learn,
-.unintentional-cost__absolute-learn,
-.process-page__absolute-read {
+.unintentional-cost__absolute-learn {
   color: #cb6942;
   position: absolute;
   right: 0;
@@ -391,9 +387,17 @@ img {
   font-size: 18px;
 }
 
+.process-page__absolute-read {
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  font-size: 18px;
+}
+
 .legal-representation__absolute-learn::after,
-.unintentional-cost__absolute-learn::after,
-.process-page__absolute-read::after {
+.unintentional-cost__absolute-learn::after {
   content: '';
   position: absolute;
   left: 0;
@@ -401,6 +405,16 @@ img {
   width: 117px;
   height: 2px;
   background: #cb6942;
+}
+
+.process-page__absolute-read::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 117px;
+  height: 2px;
+  background: #ffffff;
 }
 
 .legal-representation__absolute-learn::after,
@@ -423,11 +437,19 @@ img {
 .legal-representation__plus-sign,
 .legal-representation__anchor-learn,
 .unintentional-cost__anchor-learn,
-.unintentional-cost__plus-sign,
+.unintentional-cost__plus-sign {
+  text-decoration: none;
+  color: #cb6942;
+  font-size: 18px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
 .process-page__anchor-read,
 .process-page__plus-sign {
   text-decoration: none;
-  color: #cb6942;
+  color: #ffffff;
   font-size: 18px;
   @media (max-width: 576px) {
     font-size: 14px;
@@ -547,7 +569,10 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-right: 100px;
+  // margin-right: 100px;
+  @media (max-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .process-page__numbers {
@@ -558,13 +583,16 @@ img {
 
 .process-page__box-text {
   font-size: 32px;
-
+  // display: flex;
+  // align-items: center;
   color: #ffffff;
 }
 
 .process-page__icon-text {
   display: flex;
-  align-items: center;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .process-page__svg {
