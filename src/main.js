@@ -12,16 +12,14 @@ learnMoreBtn.addEventListener('click', (e) => {
   }
 });
 
-// const readMoreBtn = document.querySelector(
-//   '.legal-representation__anchor-read'
-// );
-// const text = document.querySelector('.legal-representation__description-learn');
+const readMoreBtn = document.querySelector('.process-page__anchor-read');
+const textRead = document.querySelector('.process-page__read-paragraph');
 
-// learnMoreBtn.addEventListener('click', (e) => {
-//   text.classList.toggle('legal-representation__show-more');
-//   if (learnMoreBtn.innerText === 'Learn More') {
-//     learnMoreBtn.innerText = 'Learn Less';
-//   } else {
-//     learnMoreBtn.innerText = 'Learn More';
-//   }
-// });
+readMoreBtn.addEventListener('click', (e) => {
+  textRead.classList.toggle('process-page__show-more');
+  if (readMoreBtn.innerText === 'Read More') {
+    readMoreBtn.innerText = 'Read Less';
+  } else {
+    readMoreBtn.innerText = 'Read More';
+  }
+});
