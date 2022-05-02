@@ -15,7 +15,7 @@ img {
 
 .process-page__section-wrapper {
   background-color: #414141;
-  paddding-top: 160px;
+  padding-top: 160px;
   @media (max-width: 768px) {
     padding-top: 40px;
   }
@@ -858,6 +858,9 @@ img {
   @media only screen and (max-width: 920px) {
     width: 90%;
   }
+  // @media only screen and (max-width: 768px) {
+  //   width: 70%;
+  // }
   @media only screen and (max-width: 600px) {
     background-size: cover;
     bottom: 240px;
@@ -1090,7 +1093,7 @@ img {
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 160px;
+  // padding-bottom: 160px;
   @media (max-width: 1200px) {
     z-index: 1;
   }
@@ -1128,3 +1131,138 @@ img {
 // list box
 
 //unintentional cost end
+
+//type of injury form
+
+.type-of-injury__form-container {
+  padding-bottom: 137px;
+  @media (max-width: 1200px) {
+    padding-top: 150px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 350px;
+  }
+  @media (max-width: 576px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (max-width: 400px) {
+    padding-top: 440px;
+  }
+}
+
+.type-of-injury__title {
+  font-size: 80px;
+  margin-top: 104px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  position: relative;
+  @media (max-width: 1200px) {
+    font-size: 60px;
+  }
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-top: 32px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+}
+.type-of-injury__title::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  bottom: -20px;
+  width: 144px;
+  height: 4px;
+  background: #cb6942;
+  @media (max-width: 768px) {
+    width: 64px;
+    height: 2px;
+    left: -20px;
+    bottom: -10px;
+  }
+}
+.type-of-injury__input-accident,
+.type-of-injury__input-name,
+.type-of-injury__input-tel,
+.type-of-injury__input-email {
+  display: grid;
+  gap: 15px 0;
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 400;
+
+  background-color: #ffffff;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-arrow {
+  display: block;
+  background: #cb6942;
+  height: 62%;
+  width: 64px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.custom-arrow::after {
+  background-image: url('/img/arrow.svg');
+  top: 50%;
+  color: white;
+}
+
+.type-of-injury__input-submit {
+  display: grid;
+  gap: 15px 0;
+  margin-top: 21px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  background-color: #ffffff;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+.type-of-injury__input-accident select,
+.type-of-injury__input-name input,
+.type-of-injury__input-tel input,
+.type-of-injury__input-email input {
+  box-shadow: 0px 0px 2px 5px rgba(199, 195, 195, 0.116);
+  border: none;
+  padding: 20px;
+  @media (max-width: 576px) {
+    padding: 14px;
+  }
+}
+.type-of-injury__input-name ::placeholder,
+.type-of-injury__input-tel ::placeholder,
+.type-of-injury__input-email ::placeholder {
+  color: #b7b6b6;
+  text-transform: uppercase;
+}
+.type-of-injury__input-submit input {
+  background-color: #cb6942;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  @media (max-width: 576px) {
+    font-size: 14px;
+    padding: 15px 20px 15px 20px;
+  }
+}
+.type-of-injury__input-submit input:hover {
+  background-color: #222629;
+  color: #cb6942;
+}
