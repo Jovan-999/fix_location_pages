@@ -1193,7 +1193,16 @@ img {
   font-size: 18px;
   font-family: 'Roboto';
   font-weight: 400;
-
+  background-color: #ffffff;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+.type-of-injury__text {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 400;
   background-color: #ffffff;
   @media (max-width: 576px) {
     font-size: 14px;
@@ -1207,16 +1216,30 @@ img {
 .custom-arrow {
   display: block;
   background: #cb6942;
-  height: 62%;
+  height: 100%;
   width: 64px;
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
+  pointer-events: none;
+  z-index: 1;
+  @media (max-width: 576px) {
+    width: 48px;
+  }
 }
 .custom-arrow::after {
-  background-image: url('/img/arrow.svg');
-  top: 50%;
-  color: white;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.custom-arrow::after {
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 1em solid white;
+  top: 40%;
+  left: 23%;
 }
 
 .type-of-injury__input-submit {
@@ -1232,7 +1255,6 @@ img {
   }
 }
 
-.type-of-injury__input-accident select,
 .type-of-injury__input-name input,
 .type-of-injury__input-tel input,
 .type-of-injury__input-email input {
@@ -1243,6 +1265,16 @@ img {
     padding: 14px;
   }
 }
+
+.type-of-injury__input-accident select {
+  box-shadow: 0px 0px 2px 5px rgba(199, 195, 195, 0.116);
+  border: none;
+  padding: 20px 80px 20px 20px;
+  @media (max-width: 576px) {
+    padding: 14px;
+  }
+}
+
 .type-of-injury__input-name ::placeholder,
 .type-of-injury__input-tel ::placeholder,
 .type-of-injury__input-email ::placeholder {
