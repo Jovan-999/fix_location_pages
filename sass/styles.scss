@@ -107,14 +107,8 @@ img {
   padding-top: 160px;
 }
 
-.legal-representation__content-wrapper {
-  position: relative;
-}
-
-.legal-representation__relative-container {
-  position: relative;
-}
-
+.legal-representation__content-wrapper,
+.legal-representation__relative-container,
 .legal-representation__relative-second {
   position: relative;
 }
@@ -185,6 +179,9 @@ img {
   font-size: 80px;
   position: relative;
   color: #ffffff;
+  @media (max-width: 992px) {
+    font-size: 60px;
+  }
   @media (max-width: 768px) {
     font-size: 32px;
   }
@@ -517,7 +514,7 @@ img {
 }
 
 .unintentional-cost__absolute-learn {
-  padding-right: 70px;
+  // padding-right: 70px;
   @media (max-width: 1200px) {
     padding-right: 0;
   }
@@ -727,7 +724,7 @@ img {
   max-width: 180px;
   @media (max-width: 576px) {
     padding-left: 80px;
-    max-width: 300px;
+    max-width: 215px;
   }
 }
 .process-page__box-second {
@@ -744,10 +741,13 @@ img {
 }
 
 .process-page__svg-1,
-.process-page__svg-2,
-.process-page__svg-3 {
+.process-page__svg-2 {
   width: 83px;
   height: 83px;
+  @media (max-width: 576px) {
+    max-width: 64px;
+    max-height: 64px;
+  }
 }
 
 .process-page__svg-1 {
@@ -758,8 +758,8 @@ img {
     left: -78px;
   }
   @media (max-width: 576px) {
-    top: 50%;
-    transform: translateY(-50%);
+    // top: 50%;
+    // transform: translateY(-50%);
     left: 0;
   }
 }
@@ -771,9 +771,9 @@ img {
     left: 0;
   }
   @media (max-width: 400px) {
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
+    left: 15px;
   }
 }
 
@@ -781,10 +781,16 @@ img {
   position: absolute;
   top: 0;
   left: -83px;
+  width: 83px;
+  height: 83px;
+  @media (max-width: 576px) {
+    max-width: 76px;
+    max-height: 64px;
+  }
   @media (max-width: 400px) {
-    top: 50%;
-    transform: translateY(-50%);
-    left: -30px;
+    // top: 50%;
+    // transform: translateY(-50%);
+    left: -10px;
   }
 }
 
@@ -849,8 +855,9 @@ img {
   position: absolute;
   top: 160px;
   left: -276px;
+  // overflow-x: hidden;
   // bottom: 125px;
-  @media only screen and (max-width: 1120px) {
+  @media only screen and (max-width: 1200px) {
     background-size: contain;
     width: 80%;
     left: 0;
@@ -866,12 +873,14 @@ img {
     bottom: 240px;
     right: 20px;
     width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     opacity: 0.5;
   }
   @media only screen and (max-width: 400px) {
     top: 295px;
     left: -90px;
+    width: 120%;
+    overflow-x: hidden;
   }
 }
 
@@ -938,6 +947,7 @@ img {
     width: 64px;
     height: 2px;
     left: -12px;
+    bottom: -10px;
   }
 }
 
@@ -969,14 +979,15 @@ img {
   margin-top: 57px;
   font-size: 18px;
   position: relative;
-  padding-right: 90px;
+  margin-right: 120px;
   line-height: 1.6;
+  @media (max-width: 1450px) {
+    margin-right: 60px;
+  }
   @media (max-width: 1200px) {
-    padding-right: 60px;
+    margin-right: 0;
   }
-  @media (max-width: 992px) {
-    padding-right: 0;
-  }
+
   @media (max-width: 576px) {
     font-size: 14px;
     margin-top: 26px;
@@ -1066,6 +1077,10 @@ img {
   text-transform: uppercase;
   margin-top: 95px;
   cursor: pointer;
+  @media (min-width: 1200px) {
+    padding: 22.3px 76px 22.7px 76px;
+    width: 100%;
+  }
   @media (max-width: 768px) {
     font-size: 16px;
     height: 44px;
@@ -1179,7 +1194,7 @@ img {
   @media (max-width: 768px) {
     width: 64px;
     height: 2px;
-    left: -20px;
+    left: -12px;
     bottom: -10px;
   }
 }
@@ -1227,19 +1242,20 @@ img {
     width: 48px;
   }
 }
-.custom-arrow::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-}
+// .custom-arrow::after {
+//   position: absolute;
+// }
 
-.custom-arrow::after {
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-top: 1em solid white;
+.custom-svg {
+  position: absolute;
   top: 40%;
-  left: 23%;
+  left: 20%;
+  width: 40px;
+  height: 16px;
+  @media (max-width: 576px) {
+    width: 28px;
+    height: 14px;
+  }
 }
 
 .type-of-injury__input-submit {
