@@ -12,6 +12,18 @@ learnMoreBtn.addEventListener('click', (e) => {
   }
 });
 
+const learnMore = document.querySelector('.unintentional-cost__anchor-learn');
+const textLearn = document.querySelector('.unintentional-cost__paragraph-show');
+
+learnMore.addEventListener('click', (e) => {
+  textLearn.classList.toggle('unintentional-cost__show-more');
+  if (learnMore.innerText === 'Learn More') {
+    learnMore.innerText = 'Learn Less';
+  } else {
+    learnMore.innerText = 'Learn More';
+  }
+});
+
 const readMoreBtn = document.querySelector('.process-page__anchor-read');
 const textRead = document.querySelector('.process-page__read-paragraph');
 
