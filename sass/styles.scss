@@ -491,23 +491,31 @@ img {
   }
 }
 
-.legal-representation__plus-sign,
 .legal-representation__anchor-learn,
-.unintentional-cost__anchor-learn,
-.unintentional-cost__plus-sign {
+.unintentional-cost__anchor-learn {
   text-decoration: none;
   color: #cb6942;
   font-size: 18px;
+  cursor: pointer;
   @media (max-width: 576px) {
     font-size: 14px;
   }
 }
 
-.process-page__anchor-read,
-.process-page__plus-sign {
+.legal-representation__anchor-learn:hover,
+.unintentional-cost__anchor-learn:hover {
+  color: #cb6942;
+}
+
+.process-page__anchor-read:hover {
+  color: #ffffff;
+}
+
+.process-page__anchor-read {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
+  cursor: pointer;
   @media (max-width: 576px) {
     font-size: 14px;
   }

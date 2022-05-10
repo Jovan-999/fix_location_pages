@@ -5,10 +5,10 @@ const text = document.querySelector('.legal-representation__description-learn');
 
 learnMoreBtn.addEventListener('click', (e) => {
   text.classList.toggle('legal-representation__show-more');
-  if (learnMoreBtn.innerText === 'Learn More') {
-    learnMoreBtn.innerText = 'Learn Less';
+  if (learnMoreBtn.innerHTML === '+&nbsp;&nbsp; Learn More') {
+    learnMoreBtn.innerHTML = '-&nbsp;&nbsp; Learn Less';
   } else {
-    learnMoreBtn.innerText = 'Learn More';
+    learnMoreBtn.innerHTML = '+&nbsp;&nbsp; Learn More';
   }
 });
 
@@ -17,10 +17,10 @@ const textLearn = document.querySelector('.unintentional-cost__paragraph-show');
 
 learnMore.addEventListener('click', (e) => {
   textLearn.classList.toggle('unintentional-cost__show-more');
-  if (learnMore.innerText === 'Learn More') {
-    learnMore.innerText = 'Learn Less';
+  if (learnMore.innerHTML === '+&nbsp;&nbsp; Learn More') {
+    learnMore.innerHTML = '-&nbsp;&nbsp; Learn Less';
   } else {
-    learnMore.innerText = 'Learn More';
+    learnMore.innerHTML = '+&nbsp;&nbsp; Learn More';
   }
 });
 
@@ -29,9 +29,9 @@ const textRead = document.querySelector('.process-page__read-paragraph');
 
 readMoreBtn.addEventListener('click', (e) => {
   textRead.classList.toggle('process-page__show-more');
-  if (readMoreBtn.innerText === 'Read More') {
-    readMoreBtn.innerText = 'Read Less';
+  if (readMoreBtn.innerHTML === '+&nbsp;&nbsp; Read More') {
+    readMoreBtn.innerHTML = '-&nbsp;&nbsp; Read Less';
   } else {
-    readMoreBtn.innerText = 'Read More';
+    readMoreBtn.innerHTML = '+&nbsp;&nbsp; Read More';
   }
 });
